@@ -8,7 +8,7 @@ import kotlinx.coroutines.ensureActive
 import kotlinx.serialization.SerializationException
 import kotlin.coroutines.coroutineContext
 
-//to make the request
+//function to make the request
 suspend inline fun <reified T> safeCall(
     execute: () -> HttpResponse
 ) : Result<T, NetworkError> {
