@@ -32,7 +32,7 @@ fun CoinListScreen(
             CircularProgressIndicator()
         }
     } else {
-        LazyColumn (
+        LazyColumn(
             modifier = modifier.fillMaxSize(),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
