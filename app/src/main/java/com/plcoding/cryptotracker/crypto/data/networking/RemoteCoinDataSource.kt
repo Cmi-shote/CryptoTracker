@@ -6,6 +6,7 @@ import com.plcoding.cryptotracker.core.domain.util.NetworkError
 import com.plcoding.cryptotracker.core.domain.util.Result
 import com.plcoding.cryptotracker.core.domain.util.map
 import com.plcoding.cryptotracker.crypto.data.mappers.toCoin
+import com.plcoding.cryptotracker.crypto.data.mappers.toCoinPrice
 import com.plcoding.cryptotracker.crypto.data.networking.dataTransferObject.CoinHistoryDto
 import com.plcoding.cryptotracker.crypto.data.networking.dataTransferObject.CoinsResponseDto
 import com.plcoding.cryptotracker.crypto.domain.Coin
@@ -45,7 +46,7 @@ class RemoteCoinDataSource(
             .toInstant()
             .toEpochMilli()
 
-        return safeCall<CoinHistoryDto {
+        return safeCall<CoinHistoryDto> {
             httpClient.get(
                 constructUrl("/assets/$coinId/history")
             ) {
