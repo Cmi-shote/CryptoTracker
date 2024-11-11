@@ -5,4 +5,7 @@
     <string name="error_no_internet">Check internet connection to connect to server.</string>
     <string name="error_unknown">Unknown Error</string>
     <string name="error_serialization">Couldn\'t pass data.</string>
+    <string name="market_cap">Market Cap</string>
+    <string name="price">Price</string>
+    <string name="change_last_24H">Change last 24Hr</string>
 </resources>
