@@ -1,6 +1,6 @@
 CryptoTracker App
 
-A Crypto tracker app used to view popular cryptocurrency 
+A Crypto tracker app used to view popular cryptocurrency as well as price changes and general information about it
 
 
 Prerequisites 🎯
